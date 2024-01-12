@@ -11,20 +11,21 @@
     QObject::connect(tcpSocket, SIGNAL(readyRead()),this, SLOT(recevoir()) );
     
 # pensez a changer ces lignes afin de vous connectez au server 
-  tcpSocket->connectToHost(QHostAddress("127.0.0.1"), PORT_SERVEUR);
-  tcpSocket->connectToHost(QHostAddress::LocalHost, PORT_SERVEUR);
+    tcpSocket->connectToHost(QHostAddress("127.0.0.1"), PORT_SERVEUR);
+    tcpSocket->connectToHost(QHostAddress::LocalHost, PORT_SERVEUR);
   
 # rajouter cette ligne afin d'afficher les données 
 
-QByteArray donne = tcpSocket->readAll();
+    QByteArray donne = tcpSocket->readAll();
     qDebug() << "Des donnes ont ete reçues : ";
-   // afficher les données reçues dans un qdebug ici....
+    // afficher les données reçues dans un qdebug ici....
     qDebug() <<donne;
 
 
  #### LANCER VOTRE SERVEUR NETCAT  :
- - Ouvrez un terminal executez la commande suivante afin de créer le serveur 
-   while true; do (echo "Hello" | nc -l -p 8000) done
+ - Ouvrez un terminal executez la commande suivante afin de créer le serveur
+   
+                   while true; do (echo "Hello" | nc -l -p 8000) done
 
 
 ### LANCER LE CLIENT
