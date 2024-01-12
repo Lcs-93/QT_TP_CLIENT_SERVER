@@ -4,17 +4,17 @@
 - video QT CREATOR : https://www.youtube.com/watch?v=JDIV3DZTWSY
   
 ## Importer	le projet Qt	nommé « client_TCP_eleve »,	ajouter	dans	le	fichier	.pro les fichier sont dans ce repository https://github.com/alitobji/TP_QT_Socket_eleve
-ajouter ces lignes de code suivant dans le fichier client.cpp dans le constructeur CLIENT
+# ajouter ces lignes de code suivant dans le fichier client.cpp dans le constructeur CLIENT
     QObject::connect(tcpSocket, SIGNAL(connected()), this,  SLOT (estConnectee()) );
     QObject::connect(tcpSocket, SIGNAL(disconnected()), this,  SLOT(estDeconnectee()) );
     QObject::connect(tcpSocket, SIGNAL(error(QAbstractSocket::SocketError) ), this, SLOT (gestionErreur(QAbstractSocket::SocketError)) );
     QObject::connect(tcpSocket, SIGNAL(readyRead()),this, SLOT(recevoir()) );
     
-pensez a changer ces lignes afin de vous connectez au server 
+# pensez a changer ces lignes afin de vous connectez au server 
   tcpSocket->connectToHost(QHostAddress("127.0.0.1"), PORT_SERVEUR);
   tcpSocket->connectToHost(QHostAddress::LocalHost, PORT_SERVEUR);
   
-rajouter cette ligne afin d'afficher les données 
+# rajouter cette ligne afin d'afficher les données 
 
 QByteArray donne = tcpSocket->readAll();
     qDebug() << "Des donnes ont ete reçues : ";
