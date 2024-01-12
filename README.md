@@ -29,14 +29,14 @@ QByteArray donne = tcpSocket->readAll();
 
 ### LANCER LE CLIENT
 
-vous pouvez executez votre projet client qui va envoyez une donnees au serveur et renvoyez une donnée au client.
+vous pouvez executer votre projet client qui va envoyez une donnée au serveur et renvoyez une donnée au client.
 
 ## PARTIE 2
--télécharger le fichier zip TP CLIENT SERVER TERMINAL 
--éxecuter les deux projet client et server 
--cela devrait afficher dans le terminal les données recu et envoyez 
+- télécharger le fichier zip TP CLIENT SERVER TERMINAL 
+- éxecuter les deux projet client et server 
+- cela devrait afficher dans le terminal les données recu et envoyez 
 
 ## PARTIE 3
--télécharger le fichier zip TP CLIENT SERVER GRAPHIQUE 
--executer les deux projet 
--appuyez sur le bouton de l'interface graphique pour envoyez des données et en recevoir par le serveur 
+- télécharger le fichier zip TP CLIENT SERVER GRAPHIQUE 
+- éxecuter les deux projet 
+- appuyez sur le bouton de l'interface graphique pour envoyez des données et en recevoir par le serveur 
